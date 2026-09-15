@@ -2,3 +2,5 @@
 # Python 3.14.5
 # Python 3.14
 # Python 3.12
+# pyQT 6
+# pip
