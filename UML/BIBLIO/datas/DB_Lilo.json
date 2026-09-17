@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "isbn": "978-2070413119",
+    "titre": "Le Petit Prince",
+    "auteur": "Antoine de Saint-Exupéry",
+    "image": "petit_prince.jpg",
+    "stock": 5
+  },
+  {
+    "id": 2,
+    "isbn": "978-2253004226",
+    "titre": "1984",
+    "auteur": "George Orwell",
+    "image": "1984.jpg",
+    "stock": 3
+  }
+]
