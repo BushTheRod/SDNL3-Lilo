@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+
+# utils/arbo.py
+
 """
-Liste l'arborescence complète du dossier PARENT (../) et de ses sous-dossiers.
-Écrit le résultat dans arbo.txt, au même niveau que ce script.
+Liste l'arborescence complète
 """
 
 import sys
