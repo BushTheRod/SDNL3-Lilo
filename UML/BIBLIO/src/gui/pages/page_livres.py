@@ -12,6 +12,7 @@ from .page_base import PageBase
 from ...core.exceptions import BiblioError
 from ..placeholder import placeholder_livre
 from ...utils.paths import dossier_datas
+from ..qt_compat import QTableWidgetItem
 
 
 class DialogLivre(QDialog):
@@ -196,13 +197,10 @@ class PageLivres(PageBase):
                 l.image or "—",
             ]
             for j, v in enumerate(valeurs):
-                item = self.table.item(i, j)
-                if item is None:
-                    item = self.table.setItem(i, j, self._item(v))
-                else:
-                    item.setText(v)
+                item = QTableWidgetItem(v)
                 if j == 0:
                     item.setData(Qt.ItemDataRole.UserRole, l.id)
+                self.table.setItem(i, j, item)
         self.table.resizeColumnsToContents()
 
     def _item(self, texte: str):

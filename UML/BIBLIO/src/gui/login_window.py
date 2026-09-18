@@ -87,7 +87,7 @@ class LoginWindow(QDialog):
             session = self.auth.connexion(email, mdp)
             self.connexion_reussie.emit(session)
             self.accept()
-        except AuthentificationEchoue as e:
+        except AuthentificationEchouee as e:
             QMessageBox.critical(self, "Échec", str(e))
 
     def _connexion_guest(self):

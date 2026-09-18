@@ -72,13 +72,13 @@ class AuthService:
         for p in self.db.personnels:
             if p.email.lower() == email.lower():
                 if not p.a_mot_de_passe():
-                    raise AuthentificationEchoue(
+                    raise AuthentificationEchouee(
                         "Ce compte n'a pas de mot de passe (GUEST)."
                     )
                 if p.authentifier(mot_de_passe):
                     return Session(p)
-                raise AuthentificationEchoue("Mot de passe incorrect.")
-        raise AuthentificationEchoue("Aucun compte ne correspond à cet email.")
+                raise AuthentificationEchouee("Mot de passe incorrect.")
+        raise AuthentificationEchouee("Aucun compte ne correspond à cet email.")
 
     def lister_personnels(self) -> list[Personnel]:
         return list(self.db.personnels)
