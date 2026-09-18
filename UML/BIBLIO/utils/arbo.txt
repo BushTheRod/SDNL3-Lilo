@@ -1,0 +1,6 @@
+C:\xampp\htdocs\SDNL3-Lilo\UML\BIBLIO
+├── [D] datas
+│   └── [F] DB_Lilo.json
+└── [D] utils
+    ├── [F] arbo.py
+    └── [F] arbo.txt
