@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.omg.org/spec/UML/20110701">
+  <uml:Model xmi:id="_model_DBLilo" name="DB_Lilo">
+
+    <!-- Types primitifs locaux (pour eviter les references externes non resolues) -->
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_type_int" name="int"/>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_type_string" name="String"/>
+
+    <!-- Classe Livre -->
+    <packagedElement xmi:type="uml:Class" xmi:id="_Livre" name="Livre">
+      <ownedAttribute xmi:id="_Livre_id" name="id" visibility="private" type="_type_int"/>
+      <ownedAttribute xmi:id="_Livre_isbn" name="isbn" visibility="private" type="_type_string"/>
+      <ownedAttribute xmi:id="_Livre_titre" name="titre" visibility="private" type="_type_string"/>
+      <ownedAttribute xmi:id="_Livre_auteur" name="auteur" visibility="private" type="_type_string"/>
+      <ownedAttribute xmi:id="_Livre_image" name="image" visibility="private" type="_type_string"/>
+      <ownedAttribute xmi:id="_Livre_stock" name="stock" visibility="private" type="_type_int"/>
+      <ownedOperation xmi:id="_Livre_op_getTitre" name="getTitre" visibility="public">
+        <ownedParameter xmi:id="_Livre_op_getTitre_ret" direction="return" type="_type_string"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_Livre_op_estDisponible" name="estDisponible" visibility="public">
+        <ownedParameter xmi:id="_Livre_op_estDisponible_ret" direction="return" type="_type_int"/>
+      </ownedOperation>
+    </packagedElement>
+
+    <!-- Classe Categorie -->
+    <packagedElement xmi:type="uml:Class" xmi:id="_Categorie" name="Categorie">
+      <ownedAttribute xmi:id="_Categorie_id" name="id" visibility="private" type="_type_int"/>
+      <ownedAttribute xmi:id="_Categorie_nom" name="nom" visibility="private" type="_type_string"/>
+      <ownedOperation xmi:id="_Categorie_op_getNom" name="getNom" visibility="public">
+        <ownedParameter xmi:id="_Categorie_op_getNom_ret" direction="return" type="_type_string"/>
+      </ownedOperation>
+    </packagedElement>
+
+    <!-- Association Livre <-> Categorie (many-to-many : hypothese a ajuster si besoin) -->
+    <packagedElement xmi:type="uml:Association" xmi:id="_assoc_Livre_Categorie" name="appartientA"
+                      memberEnd="_assoc_end_categories _assoc_end_livres">
+      <ownedEnd xmi:id="_assoc_end_categories" name="categories" type="_Categorie" association="_assoc_Livre_Categorie" aggregation="none">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_assoc_end_categories_lo" value="0"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_assoc_end_categories_up" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_assoc_end_livres" name="livres" type="_Livre" association="_assoc_Livre_Categorie" aggregation="none">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_assoc_end_livres_lo" value="0"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_assoc_end_livres_up" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+
+  </uml:Model>
+</xmi:XMI>
