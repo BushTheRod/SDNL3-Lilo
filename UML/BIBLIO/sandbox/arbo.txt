@@ -1,0 +1,58 @@
+C:\xampp\htdocs\SDNL3-Lilo\UML\BIBLIO
+├── [D] datas
+│   └── [F] DB_Lilo.json
+├── [D] sandbox
+│   ├── [F] arbo.py
+│   ├── [F] arbo.txt
+│   ├── [F] DB_Lilo.uml
+│   └── [F] DB_Lilo_ClassDiagram.xmi
+├── [D] src
+│   ├── [D] __pycache__
+│   │   ├── [F] __init__.cpython-314.pyc
+│   │   └── [F] main.cpython-314.pyc
+│   ├── [D] core
+│   │   ├── [D] __pycache__
+│   │   │   ├── [F] auth.cpython-314.pyc
+│   │   │   ├── [F] database.cpython-314.pyc
+│   │   │   ├── [F] enums.cpython-314.pyc
+│   │   │   ├── [F] exceptions.cpython-314.pyc
+│   │   │   └── [F] models.cpython-314.pyc
+│   │   ├── [F] auth.py
+│   │   ├── [F] database.py
+│   │   ├── [F] enums.py
+│   │   ├── [F] exceptions.py
+│   │   ├── [F] models.py
+│   │   └── [F] services.py
+│   ├── [D] gui
+│   │   ├── [D] __pycache__
+│   │   │   ├── [F] __init__.cpython-314.pyc
+│   │   │   ├── [F] login_window.cpython-314.pyc
+│   │   │   ├── [F] qt_compat.cpython-314.pyc
+│   │   │   ├── [F] theme.cpython-314.pyc
+│   │   │   └── [F] theme_manager.cpython-314.pyc
+│   │   ├── [D] pages
+│   │   │   ├── [F] __init__.py
+│   │   │   ├── [F] page_base.py
+│   │   │   ├── [F] page_categories.py
+│   │   │   ├── [F] page_emprunts.py
+│   │   │   ├── [F] page_livres.py
+│   │   │   ├── [F] page_personnel.py
+│   │   │   ├── [F] page_reservations.py
+│   │   │   └── [F] page_usagers.py
+│   │   ├── [F] __init__.py
+│   │   ├── [F] login_window.py
+│   │   ├── [F] main_window.py
+│   │   ├── [F] placeholder.py
+│   │   ├── [F] qt_compat.py
+│   │   ├── [F] sidebar.py
+│   │   ├── [F] theme.py
+│   │   └── [F] theme_manager.py
+│   ├── [D] utils
+│   │   ├── [D] __pycache__
+│   │   │   └── [F] paths.cpython-314.pyc
+│   │   └── [F] paths.py
+│   ├── [F] __init__.py
+│   ├── [F] main.py
+│   ├── [F] test_fondations.py
+│   └── [F] test_services.py
+└── [F] requirements.txt

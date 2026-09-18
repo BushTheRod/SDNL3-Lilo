@@ -1,0 +1,91 @@
+@startuml DB_Lilo
+
+enum TypePersonnel {
+  ADMIN
+  SUPERVISEUR
+  GUEST
+}
+
+enum StatutEmprunt {
+  EN_COURS
+  RENDU
+  EN_RETARD
+}
+
+enum StatutReservation {
+  EN_ATTENTE
+  DISPONIBLE
+  ANNULEE
+  HONOREE
+}
+
+class Livre {
+  -id : int
+  -isbn : String
+  -titre : String
+  -auteur : String
+  -image : String
+  -stock : int
+  -annee_publication : int
+  +getTitre() : String
+  +estDisponible() : bool
+}
+
+class Categorie {
+  -id : int
+  -nom : String
+  +getNom() : String
+}
+
+class Usager {
+  -id : int
+  -nom : String
+  -prenom : String
+  -email : String
+  -telephone : String
+  -dateInscription : Date
+  +getNomComplet() : String
+}
+
+class Personnel {
+  -id : int
+  -nom : String
+  -prenom : String
+  -email : String
+  -motDePasse : String
+  -type : TypePersonnel
+  +authentifier() : bool
+}
+note right of Personnel::motDePasse
+  motDePasse utilise uniquement
+  si type = ADMIN ou SUPERVISEUR.
+  Non applicable pour GUEST.
+end note
+
+class Emprunt {
+  -id : int
+  -dateEmprunt : Date
+  -dateRetourPrevue : Date
+  -dateRetourEffective : Date
+  -statut : StatutEmprunt
+  +estEnRetard() : bool
+}
+
+class Reservation {
+  -id : int
+  -dateReservation : Date
+  -dateExpiration : Date
+  -statut : StatutReservation
+  +estExpiree() : bool
+}
+
+Livre "0..*" -- "0..*" Categorie : appartientA
+
+Usager "1" -- "0..*" Emprunt : effectue
+Livre "1" -- "0..*" Emprunt : concerne
+Personnel "0..1" -- "0..*" Emprunt : traite
+
+Usager "1" -- "0..*" Reservation : effectue
+Livre "1" -- "0..*" Reservation : concerne
+
+@enduml
