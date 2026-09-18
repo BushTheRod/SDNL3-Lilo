@@ -1,0 +1,93 @@
+C:\xampp\htdocs\SDNL3-Lilo\UML\BIBLIO
+├── [D] datas
+│   └── [F] DB_Lilo.json
+├── [D] sandbox
+│   ├── [F] arbo.py
+│   ├── [F] arbo.txt
+│   ├── [F] DB_Lilo.uml
+│   └── [F] DB_Lilo_ClassDiagram.xmi
+├── [D] src
+│   ├── [D] core
+│   │   ├── [F] auth.py
+│   │   ├── [F] database.py
+│   │   ├── [F] enums.py
+│   │   ├── [F] exceptions.py
+│   │   ├── [F] models.py
+│   │   └── [F] services.py
+│   ├── [D] gui
+│   │   ├── [D] pages
+│   │   │   ├── [F] __init__.py
+│   │   │   ├── [F] page_base.py
+│   │   │   ├── [F] page_categories.py
+│   │   │   ├── [F] page_emprunts.py
+│   │   │   ├── [F] page_livres.py
+│   │   │   ├── [F] page_personnel.py
+│   │   │   ├── [F] page_reservations.py
+│   │   │   └── [F] page_usagers.py
+│   │   ├── [F] __init__.py
+│   │   ├── [F] login_window.py
+│   │   ├── [F] main_window.py
+│   │   ├── [F] placeholder.py
+│   │   ├── [F] qt_compat.py
+│   │   ├── [F] sidebar.py
+│   │   ├── [F] theme.py
+│   │   └── [F] theme_manager.py
+│   ├── [D] utils
+│   │   └── [F] paths.py
+│   ├── [F] __init__.py
+│   ├── [F] main.py
+│   ├── [F] test_fondations.py
+│   └── [F] test_services.py
+└── [F] requirements.txt
+
+============================================================
+  STATISTIQUES DE CODE
+============================================================
+
+Par type de fichier :
+  Extension      Fichiers     Lignes
+  ------------ ---------- ----------
+  .py                  28       2878
+  .json                 1         40
+  .txt                  2          3
+  ------------ ---------- ----------
+  TOTAL                31       2921
+
+Détail par fichier :
+  Fichier                                                   Lignes
+  ------------------------------------------------------- --------
+  datas/DB_Lilo.json                                            40
+  requirements.txt                                               3
+  sandbox/arbo.py                                              267
+  sandbox/arbo.txt                                               0
+  src/__init__.py                                                0
+  src/core/auth.py                                              84
+  src/core/database.py                                         101
+  src/core/enums.py                                             25
+  src/core/exceptions.py                                        32
+  src/core/models.py                                           223
+  src/core/services.py                                         406
+  src/gui/__init__.py                                            0
+  src/gui/login_window.py                                       96
+  src/gui/main_window.py                                        81
+  src/gui/pages/__init__.py                                      0
+  src/gui/pages/page_base.py                                    91
+  src/gui/pages/page_categories.py                              59
+  src/gui/pages/page_emprunts.py                               126
+  src/gui/pages/page_livres.py                                 241
+  src/gui/pages/page_personnel.py                              107
+  src/gui/pages/page_reservations.py                           122
+  src/gui/pages/page_usagers.py                                112
+  src/gui/placeholder.py                                        42
+  src/gui/qt_compat.py                                          78
+  src/gui/sidebar.py                                            78
+  src/gui/theme.py                                             294
+  src/gui/theme_manager.py                                      26
+  src/main.py                                                   62
+  src/test_fondations.py                                        32
+  src/test_services.py                                          53
+  src/utils/paths.py                                            40
+
+============================================================
+  TOTAL : 31 fichier(s) de code, 2921 ligne(s)
+============================================================

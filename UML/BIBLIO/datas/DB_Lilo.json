@@ -1,4 +1,5 @@
 {
+  "version": 1,
   "livres": [
     {
       "id": 1,
@@ -18,21 +19,22 @@
     }
   ],
   "categories": [
+    { "id": 1, "nom": "Aventure" },
+    { "id": 2, "nom": "Conte" },
+    { "id": 3, "nom": "Science-fiction" },
+    { "id": 4, "nom": "Romance" }
+  ],
+  "usagers": [],
+  "personnels": [
     {
       "id": 1,
-      "nom": "Aventure"
-    },
-    {
-      "id": 2,
-      "nom": "Conte"
-    },
-    {
-      "id": 3,
-      "nom": "Science-fiction"
-    },
-    {
-      "id": 4,
-      "nom": "Romance"
+      "nom": "Admin",
+      "prenom": "Système",
+      "email": "admin@biblio.local",
+      "mot_de_passe": "admin",
+      "type": "ADMIN"
     }
-  ]
+  ],
+  "emprunts": [],
+  "reservations": []
 }

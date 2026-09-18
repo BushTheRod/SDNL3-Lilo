@@ -1,1 +1,77 @@
+# =========================
+# Python
+# =========================
 
+# Environnement virtuel
+venv/
+.venv/
+env/
+ENV/
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Tests / couverture
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# =========================
+# IDE
+# =========================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# PySide / Qt
+# =========================
+
+# Fichiers générés par Qt Designer
+*.ui.autosave
+
+# Fichiers temporaires Qt
+*.qrc.autosave
+
+# Fichiers compilés / générés
+*.pyc
+*.pyo
+
+# =========================
+# OS
+# =========================
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+# =========================
+# Variables d'environnement
+# =========================
+
+.env
+.env.*
+!.env.example
+
+# =========================
+# Logs
+# =========================
+
+*.log
+logs/
