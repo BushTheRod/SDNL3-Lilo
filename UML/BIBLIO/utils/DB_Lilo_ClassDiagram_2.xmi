@@ -1,0 +1,22 @@
+@startuml DB_Lilo
+
+class Livre {
+  -id : int
+  -isbn : String
+  -titre : String
+  -auteur : String
+  -image : String
+  -stock : int
+  +getTitre() : String
+  +estDisponible() : bool
+}
+
+class Categorie {
+  -id : int
+  -nom : String
+  +getNom() : String
+}
+
+Livre "0..*" -- "0..*" Categorie : appartientA
+
+@enduml
