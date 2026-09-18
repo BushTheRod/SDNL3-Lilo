@@ -7,16 +7,7 @@ C:\xampp\htdocs\SDNL3-Lilo\UML\BIBLIO
 │   ├── [F] DB_Lilo.uml
 │   └── [F] DB_Lilo_ClassDiagram.xmi
 ├── [D] src
-│   ├── [D] __pycache__
-│   │   ├── [F] __init__.cpython-314.pyc
-│   │   └── [F] main.cpython-314.pyc
 │   ├── [D] core
-│   │   ├── [D] __pycache__
-│   │   │   ├── [F] auth.cpython-314.pyc
-│   │   │   ├── [F] database.cpython-314.pyc
-│   │   │   ├── [F] enums.cpython-314.pyc
-│   │   │   ├── [F] exceptions.cpython-314.pyc
-│   │   │   └── [F] models.cpython-314.pyc
 │   │   ├── [F] auth.py
 │   │   ├── [F] database.py
 │   │   ├── [F] enums.py
@@ -24,12 +15,6 @@ C:\xampp\htdocs\SDNL3-Lilo\UML\BIBLIO
 │   │   ├── [F] models.py
 │   │   └── [F] services.py
 │   ├── [D] gui
-│   │   ├── [D] __pycache__
-│   │   │   ├── [F] __init__.cpython-314.pyc
-│   │   │   ├── [F] login_window.cpython-314.pyc
-│   │   │   ├── [F] qt_compat.cpython-314.pyc
-│   │   │   ├── [F] theme.cpython-314.pyc
-│   │   │   └── [F] theme_manager.cpython-314.pyc
 │   │   ├── [D] pages
 │   │   │   ├── [F] __init__.py
 │   │   │   ├── [F] page_base.py
@@ -48,11 +33,61 @@ C:\xampp\htdocs\SDNL3-Lilo\UML\BIBLIO
 │   │   ├── [F] theme.py
 │   │   └── [F] theme_manager.py
 │   ├── [D] utils
-│   │   ├── [D] __pycache__
-│   │   │   └── [F] paths.cpython-314.pyc
 │   │   └── [F] paths.py
 │   ├── [F] __init__.py
 │   ├── [F] main.py
 │   ├── [F] test_fondations.py
 │   └── [F] test_services.py
 └── [F] requirements.txt
+
+============================================================
+  STATISTIQUES DE CODE
+============================================================
+
+Par type de fichier :
+  Extension      Fichiers     Lignes
+  ------------ ---------- ----------
+  .py                  28       2878
+  .json                 1         40
+  .txt                  2          3
+  ------------ ---------- ----------
+  TOTAL                31       2921
+
+Détail par fichier :
+  Fichier                                                   Lignes
+  ------------------------------------------------------- --------
+  datas/DB_Lilo.json                                            40
+  requirements.txt                                               3
+  sandbox/arbo.py                                              267
+  sandbox/arbo.txt                                               0
+  src/__init__.py                                                0
+  src/core/auth.py                                              84
+  src/core/database.py                                         101
+  src/core/enums.py                                             25
+  src/core/exceptions.py                                        32
+  src/core/models.py                                           223
+  src/core/services.py                                         406
+  src/gui/__init__.py                                            0
+  src/gui/login_window.py                                       96
+  src/gui/main_window.py                                        81
+  src/gui/pages/__init__.py                                      0
+  src/gui/pages/page_base.py                                    91
+  src/gui/pages/page_categories.py                              59
+  src/gui/pages/page_emprunts.py                               126
+  src/gui/pages/page_livres.py                                 241
+  src/gui/pages/page_personnel.py                              107
+  src/gui/pages/page_reservations.py                           122
+  src/gui/pages/page_usagers.py                                112
+  src/gui/placeholder.py                                        42
+  src/gui/qt_compat.py                                          78
+  src/gui/sidebar.py                                            78
+  src/gui/theme.py                                             294
+  src/gui/theme_manager.py                                      26
+  src/main.py                                                   62
+  src/test_fondations.py                                        32
+  src/test_services.py                                          53
+  src/utils/paths.py                                            40
+
+============================================================
+  TOTAL : 31 fichier(s) de code, 2921 ligne(s)
+============================================================
