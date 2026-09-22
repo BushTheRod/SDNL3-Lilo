@@ -125,3 +125,8 @@ python -m src.main
 Solution : utiliser explicitement Python 3.12
 Depuis BIBLIO/, crée un venv avec le bon Python :
 
+
+Notes:
+
+src/servives.py
+requirements.txt
